@@ -73,7 +73,7 @@ document.getElementById('search-btn').addEventListener('click', async () => {
     const query = document.getElementById('query').value;
     if (!query) return;
 
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${query}&type=video&key=${API_KEY}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=${query}&type=video&key=${API_KEY}`;
     try {
         const response = await fetch(url);
         const data = await response.json();
