@@ -1,6 +1,6 @@
 let player;
 let isRepeat = false;
-const API_KEY = 'YOUR_API_KEY_HERE'; // ⚠️ 請更換成你的 YouTube Data API Key
+const API_KEY = 'AIzaSyCcXxqOrzFhdn86ftd8J-P-cu1l9tJo5C4'; // ⚠️ 請更換成你的 YouTube Data API Key
 
 // 1. 預設推薦音樂 (可自由增減)
 const defaultMusic = [
