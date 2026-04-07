@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Music Player (Spotify Style)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">Spotify-YT</div>
+            <div class="menu-item active">首頁</div>
+            <div class="search-box">
+                <input type="text" id="query" placeholder="搜尋音樂...">
+                <button id="search-btn">搜尋</button>
+            </div>
+            <div id="playlist" class="playlist">
+                </div>
+        </nav>
+
+        <main class="main-view">
+            <header>推薦內容</header>
+            <div id="recommendations" class="card-grid">
+                </div>
+            <div id="player"></div>
+        </main>
+
+        <footer class="player-bar">
+            <div class="current-track">
+                <img id="track-thumb" src="https://via.placeholder.com/50" alt="">
+                <div class="track-info">
+                    <div id="track-title" class="title">尚未播放</div>
+                    <div id="track-channel" class="artist">選擇一首歌開始</div>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <div class="btns">
+                    <button id="play-pause-btn">▶️</button>
+                </div>
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" value="0" min="0" max="100">
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="volume-controls">
+                <span>🔊</span>
+                <input type="range" id="volume-slider" min="0" max="100" value="50">
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
